@@ -1,5 +1,6 @@
 name: Gitleaks Secret Scan
 
+
 on:
   push:
     branches: [ main, master ]
@@ -45,3 +46,4 @@ jobs:
           
           # Run with the config we just created
           ./gitleaks detect --source . --config .gitleaks.toml --verbose --no-git
+
